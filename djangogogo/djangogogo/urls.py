@@ -35,7 +35,7 @@ urlpatterns = patterns('',
     url(r'^accounts/reset/done/$',
         'django.contrib.auth.views.password_reset_complete',
         name='password_reset_complete'),
-    url(r'^about/',
+    url(r'^$',
         TemplateView.as_view(template_name='index.html'),
         name='index'),
 )
