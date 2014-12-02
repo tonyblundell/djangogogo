@@ -36,10 +36,12 @@
             </div>
         </nav>
         <div class="container">
-            <div class="page-header">
-                <h1>{% block page_header %}{% endblock %}</h1>
-            </div>
-            {% block page_content %}{% endblock %}
+            {% block main %}
+                <div class="page-header">
+                    <h1>{% block page_header %}{% endblock %}</h1>
+                </div>
+                {% block page_content %}{% endblock %}
+            {% endblock %}
         </div>
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
             <div class="container-fluid">
