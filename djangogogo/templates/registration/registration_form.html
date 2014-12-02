@@ -1,0 +1,9 @@
+{% extends "base_narrow.html" %}
+
+{% block page_header %}Sign up{% endblock %}
+
+{% block page_content %}
+    {% include "bootstrap/form.html" with submit="Sign up" %}
+    <div>&nbsp;</div>
+    <div><a href="{% url "auth_login" %}">Already signed up?</a></div>
+{% endblock %}

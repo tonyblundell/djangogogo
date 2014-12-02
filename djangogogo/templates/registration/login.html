@@ -5,5 +5,5 @@
 {% block page_content %}
     {% include "bootstrap/form.html" with submit="Log in" %}
     <div>&nbsp;</div>
-    <div><a href="{% url "password_reset" %}">Forgot your password?</a></div>
+    <div><a href="{% url "auth_password_reset" %}">Forgot your password?</a></div>
 {% endblock %}
